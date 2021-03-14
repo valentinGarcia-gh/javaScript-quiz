@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easy JavaScript Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+ 
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <div class="rules_box">
+        <div class="rules-title"><span>Quiz Rules</span></div>
+        <div class="rules-list">
+            <div class="rules">1. You will have <span>30 seconds</span> to complete the quiz.</div>
+            <div class="rules">2. Once you select your answer, it can't be undone.</div>
+            <div class="rules">3. You can't select any option once time goes off.</div>
+            <div class="rules">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="rules">5. Your get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Easy JavaScript Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="questions_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_questions">
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="complete_text">You've finished the Quiz!</div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/questions.js" async defer></script>
+    <script src="./assets/js/script.js" async defer></script>
+    
+</body>
+</html>
