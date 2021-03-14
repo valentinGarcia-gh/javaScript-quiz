@@ -2,9 +2,11 @@
 
 ## Installation
 Link to working site: 
+https://valentingarcia-gh.github.io/javaScript-quiz/
 
 ## Repository
 Link to repository: 
+https://github.com/valentinGarcia-gh/javaScript-quiz
 
 ## Description
 
