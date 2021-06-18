@@ -1,5 +1,6 @@
 //selecting all required elements
 const start_btn = $(".start_btn button");
+const user_box = $(".user_box");
 const rules_box = $(".rules_box");
 const exit_btn = $(".buttons .quit");
 const continue_btn = $(".buttons .restart");
@@ -15,6 +16,14 @@ const restart_quiz = $(".buttons .restart");
 // if startQuiz button clicked
 $(start_btn).click(function () {
   $(rules_box).addClass("activeInfo"); //show info box
+});
+
+// enters user name
+$(user_box).click(function () {
+  // $(rules_box).addClass("activeInfo"); //show info box
+  $(rules_box).addClass("activeInfo"); //show info box
+  $(start_btn).removeClass("activeInfo"); //show info box
+
 });
 
 // if exitQuiz button clicked
@@ -143,19 +152,27 @@ function checkSelection(answer) {
   let correctAnswer = questions[que_count].answer;
   let allOptions = option_list.children.length;
 
+  // High score array
+  let scoreArray = [];
+
   if (useranswer == correctAnswer) {
-    userScore += 1;
+    userScore ++;
     console.log(userScore);
     $(answer).addClass("correct");
-    console.log("Answer is Correct");
+    console.log("Answer is Correct");  
   } else {
     $(answer).addClass("incorrect");
     console.log("Answer is Wrong");
   }
+
   for (let i = 0; i < allOptions; i++) {
     option_list.children[i].classList.add("disabled");
   }
   $(next_btn).css("display", "block");
+
+  // adds user score to array 
+  scoreArray.push(userScore);
+  console.log(scoreArray);
 }
 
 function showResultBox() {

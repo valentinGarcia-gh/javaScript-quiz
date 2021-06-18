@@ -8,7 +8,16 @@
 }
 
 body {
-  background: #d0e8f2;
+  /* background: #d0e8f2; */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#particles-js
+{
+  height: 100%;
+  background: #262626;
 }
 
 ::selection {
@@ -25,6 +34,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 5% !important; */
 }
 
 .rules_box.activeInfo,
@@ -46,6 +56,33 @@ body {
   border-radius: 5px;
   background: #fff;
   cursor: pointer;
+  border-radius: 20% !important;
+}
+
+.start_btn:hover {
+  font-size: 25px;
+  font-weight: 500;
+  color: #79a3b1;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 20% !important;
+}
+
+.user_box {
+  font-size: 25px;
+  font-weight: 500;
+  color: #79a3b1;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 20% !important;
 }
 
 .rules_box {
