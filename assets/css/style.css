@@ -1,10 +1,7 @@
-/* importing google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -20,11 +17,6 @@ body {
   background: #262626;
 }
 
-::selection {
-  color: #fff;
-  background: #79a3b1;
-}
-
 .start_btn,
 .rules_box,
 .quiz_box,
@@ -34,7 +26,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border-radius: 5% !important; */
 }
 
 .rules_box.activeInfo,
@@ -72,19 +63,6 @@ body {
   border-radius: 20% !important;
 }
 
-.user_box {
-  font-size: 25px;
-  font-weight: 500;
-  color: #79a3b1;
-  padding: 15px 30px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background: #fff;
-  cursor: pointer;
-  border-radius: 20% !important;
-}
-
 .rules_box {
   width: 540px;
   background: #fff;
@@ -109,17 +87,10 @@ body {
 
 .rules_box .rules-list {
   padding: 15px 30px;
-}
-
-.rules_box .rules-list .rules {
   margin: 5px 0;
   font-size: 17px;
 }
 
-.rules_box .rules-list .rules span {
-  font-weight: 600;
-  color: #79a3b1;
-}
 .rules_box .buttons {
   height: 60px;
   display: flex;
@@ -184,12 +155,6 @@ body {
   width: 145px;
 }
 
-.quiz_box header .timer .time_left_txt {
-  font-weight: 400;
-  font-size: 17px;
-  user-select: none;
-}
-
 .quiz_box header .timer .timer_sec {
   font-size: 18px;
   font-weight: 500;
@@ -204,14 +169,6 @@ body {
   user-select: none;
 }
 
-.quiz_box header .time_line {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 3px;
-  background: #79a3b1;
-}
-
 section {
   padding: 25px 30px 20px 30px;
   background: #fff;
@@ -220,11 +177,6 @@ section {
 section .questions_text {
   font-size: 25px;
   font-weight: 600;
-}
-
-section .option_list {
-  padding: 20px 0px;
-  display: block;
 }
 
 section .option_list .option {
@@ -321,9 +273,6 @@ footer .total_questions span p {
   padding: 0 5px;
 }
 
-footer .total_questions span p:first-child {
-  padding-left: 0px;
-}
 
 footer button {
   height: 40px;
@@ -345,7 +294,8 @@ footer button {
 }
 
 footer button:hover {
-  background: #0263ca;
+  background: #fff;
+  color: #84c5fe;
 }
 
 footer button.show {
@@ -367,12 +317,6 @@ footer button.show {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-}
-
-.result_box .icon {
-  font-size: 100px;
-  color: #79a3b1;
-  margin-bottom: 10px;
 }
 
 .result_box .complete_text {

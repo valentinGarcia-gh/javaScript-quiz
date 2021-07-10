@@ -1,7 +1,7 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [
     {
-    numb: 1,
+      number: 1,
     question: "Why do JavaScript and Java have similar names?",
     answer: "JavaScript's syntax is loosely based on Java's",
     options: [
@@ -12,7 +12,7 @@ let questions = [
     ]
   },
     {
-    numb: 2,
+      number: 2,
     question: "What are variables used for in JavaScript Programs?",
     answer: "Storing numbers, dates, or other values",
     options: [
@@ -23,7 +23,7 @@ let questions = [
     ]
   },
     {
-    numb: 3,
+      number: 3,
     question: "Which of the following are capabilities of functions in JavaScript?",
     answer: "Accept parameters",
     options: [
@@ -34,7 +34,7 @@ let questions = [
     ]
   },
     {
-    numb: 4,
+      number: 4,
     question: "Which of the following is not a valid JavaScript variable name??",
     answer: "2names",
     options: [
@@ -45,7 +45,7 @@ let questions = [
     ]
   },
     {
-    numb: 5,
+      number: 5,
     question: "How long did it take to create the JavaScript language?",
     answer: "10 days",
     options: [
