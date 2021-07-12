@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background: #d0e8f2; */
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -39,27 +38,18 @@ body {
 
 .start_btn button {
   font-size: 25px;
-  font-weight: 500;
   color: #79a3b1;
-  padding: 15px 30px;
   outline: none;
   border: none;
-  border-radius: 5px;
   background: #fff;
-  cursor: pointer;
   border-radius: 20% !important;
 }
 
 .start_btn:hover {
   font-size: 25px;
-  font-weight: 500;
   color: #79a3b1;
   padding: 15px 30px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
   background: #fff;
-  cursor: pointer;
   border-radius: 20% !important;
 }
 
@@ -70,34 +60,26 @@ body {
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
 }
 
 .rules_box .rules-title {
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
   padding: 0 30px;
-  border-radius: 5px 5px 0 0;
   font-size: 20px;
   font-weight: 600;
 }
 
 .rules_box .rules-list {
   padding: 15px 30px;
-  margin: 5px 0;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .rules_box .buttons {
   height: 60px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   padding: 0 30px;
-  border-top: 1px solid lightgrey;
 }
 
 .rules_box .buttons button {
@@ -106,22 +88,16 @@ body {
   width: 100px;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
   border-radius: 5px;
   border: 1px solid #79a3b1;
-  transition: all 0.3s ease;
 }
 
 .quiz_box {
   width: 550px;
   background: #fff;
   border-radius: 5px;
-  transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
 }
 
 .quiz_box header {
@@ -135,9 +111,6 @@ body {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
-}
-
-.quiz_box header .title {
   font-size: 20px;
   font-weight: 600;
 }
@@ -152,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 145px;
+  width: 160px;
 }
 
 .quiz_box header .timer .timer_sec {
@@ -166,12 +139,12 @@ body {
   text-align: center;
   background: #343a40;
   border: 1px solid #343a40;
-  user-select: none;
 }
 
 section {
   padding: 25px 30px 20px 30px;
   background: #fff;
+  
 }
 
 section .questions_text {
@@ -187,20 +160,9 @@ section .option_list .option {
   font-size: 17px;
   margin-bottom: 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-section .option_list .option:last-child {
-  margin-bottom: 0px;
-}
-
-section .option_list .option:hover {
-  color: #004085;
-  background: #cce5ff;
-  border: 1px solid #b8daff;
 }
 
 section .option_list .option.correct {
@@ -215,10 +177,6 @@ section .option_list .option.incorrect {
   border: 1px solid #f5c6cb;
 }
 
-section .option_list .option.disabled {
-  pointer-events: none;
-}
-
 section .option_list .option .icon {
   height: 26px;
   width: 26px;
@@ -227,31 +185,7 @@ section .option_list .option .icon {
   text-align: center;
   font-size: 13px;
   pointer-events: none;
-  transition: all 0.3s ease;
   line-height: 24px;
-}
-.option_list .option .icon.tick {
-  color: #23903c;
-  border-color: #23903c;
-  background: #d4edda;
-}
-
-.option_list .option .icon.cross {
-  color: #a42834;
-  background: #f8d7da;
-  border-color: #a42834;
-}
-
-.option_list .option.correct {
-  color: #155724;
-  background: #d4edda;
-  border-color: #c3e6cb;
-}
-
-.option_list .option.incorrect {
-  color: #721c24;
-  background: #f8d7da;
-  border-color: #f5c6cb;
 }
 
 footer {
@@ -273,7 +207,6 @@ footer .total_questions span p {
   padding: 0 5px;
 }
 
-
 footer button {
   height: 40px;
   padding: 0 13px;
@@ -290,7 +223,6 @@ footer button {
   opacity: 0;
   pointer-events: none;
   transform: scale(0.95);
-  transition: all 0.3s ease;
 }
 
 footer button:hover {
@@ -316,7 +248,6 @@ footer button.show {
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
 }
 
 .result_box .complete_text {
@@ -352,7 +283,6 @@ footer button.show {
   outline: none;
   border-radius: 5px;
   border: 1px solid #79a3b1;
-  transition: all 0.3s ease;
 }
 
 .buttons button.restart {
